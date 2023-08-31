@@ -13,7 +13,11 @@ class PlacesScreen extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(builder: (ctx) => const AddPlaceScreen(),),);
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (ctx) => const AddPlaceScreen(),
+                ),
+              );
             },
             icon: const Icon(Icons.add),
           ),
